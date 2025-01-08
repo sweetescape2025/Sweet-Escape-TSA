@@ -1,0 +1,116 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla Cake</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Karma", sans-serif
+        }
+
+        .w3-bar-block .w3-bar-item {
+            padding: 20px
+        }
+
+        .nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .nav li {
+            float: right;
+        }
+
+        .nav li a {
+            display: block;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        .nav a {
+            display: block;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top menu -->
+     <div class="w3-top" style="background-color: #d1843a;">
+        <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+            <!-- <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+                            <!-- <div class="w3-right w3-padding-16">Mail</div> -->
+            <div class="w3-left w3-padding-16 nav li a"> <a href="index.html"> Cullinary Compass </a> </div>
+            <div class='w3-right w3-padding-16 nav li a'>
+                <ul class="nav">
+                    <li class="li"><a class="nav li" href="about.html">About US</a></li>
+                    <li class="nav"><a class="nav" href="contact.html">Contact US</a></li>
+                    <li class="nav"><a class="nav" href="index.html"> Home Page </a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+        <div class="w3-row-padding w3-padding-16 w3-center">
+            <img
+                src="data:image/jpeg;base64,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">
+            <h4 style="w3-center"> Vanilla Cake </h4>
+        </div>
+        <div>
+
+        </div>
+        <div>
+            <h4> Ingredients: </h4>
+            <ul>
+                <li>1 1/2 cups all-purpose flour</li>
+                <li> 1 1/2 tsp baking powder</li>
+                <li> 1/2 tsp baking soda</li>
+                <li> 1/2 tsp salt</li>
+                <li> 1/2 cup unsalted butter (softened)</li>
+                <li> 1 cup granulated sugar</li>
+                <li>2 large eggs</li>
+                <li> 1 tbsp vanilla extract</li>
+                <li> 1/2 cup sour cream (or buttermilk)</li>
+                <li>1/2 cup milk (whole milk works best)</li>
+
+            </ul>
+            <h4> Instructions: </h4>
+            <ol type=1>
+                <li> Preheat the Oven: Preheat your oven to 350°F (175°C).</li>
+                <li>Grease and flour two 8-inch round cake pans or line them with parchment paper.</li>
+                <li>Combine Dry Ingredients: In a medium bowl, whisk together the flour, baking powder, baking soda,
+                    and salt.</li>
+                <li>Mix Wet Ingredients: In a large bowl, beat the softened butter and sugar together until light
+                    and fluffy, about 3-5 minutes. Add the eggs one at a time, beating well after each addition.</li>
+                <li>Stir in the vanilla extract.</li>
+                <li>Alternate Adding Wet and Dry: Gradually add the dry ingredients to the butter mixture in three
+                    additions, alternating with the milk and sour cream (start and end with the dry ingredients).</li>
+                <li>Mix gently until just combined.</li>
+                <li>Bake: Divide the batter evenly between the two prepared cake pans. Bake for 25-30 minutes, or
+                    until a toothpick inserted into the center comes out clean.</li>
+                <li>Cool and Frost: Allow the cakes to cool in the pans for 10 minutes, then transfer them to a wire
+                    rack to cool completely. Frost with your favorite frosting (buttercream or cream cheese frosting are
+                    great choices).</li>
+            </ol>
+        </div>
+    </div>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fudge Brownie</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Karma", sans-serif
+        }
+
+        .w3-bar-block .w3-bar-item {
+            padding: 20px
+        }
+
+        .nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .nav li {
+            float: right;
+        }
+
+        .nav li a {
+            display: block;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        .nav a {
+            display: block;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top menu -->
+    <div class="w3-top" style="background-color: #d1843a;">
+        <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+            <!-- <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+                                            <!-- <div class="w3-right w3-padding-16">Mail</div> -->
+            <div class="w3-left w3-padding-16 nav li a"> <a href="index.html"> Cullinary Compass </a> </div>
+            <div class='w3-right w3-padding-16 nav li a'>
+                <ul class="nav">
+                    <li class="li"><a class="nav li" href="about.html">About US</a></li>
+                    <li class="nav"><a class="nav" href="contact.html">Contact US</a></li>
+                    <li class="nav"><a class="nav" href="index.html"> Home Page </a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+        <div class="w3-row-padding w3-padding-16 w3-center">
+            <img
+                src="data:image/jpeg;base64,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">
+            <h4 style="w3-center"> Fudge Brownie </h4>
+        </div>
+
+        <div>
+            <h4> Ingredients: </h4>
+            <ul>
+                <li> 1/2 cup unsalted butter (melted) </li>
+                <li>1 cup granulated sugar </li>
+                <li>2 large eggs</li>
+                <li>1 tsp vanilla extract</li>
+                <li>1/2 cup all-purpose flour</li>
+                <li>1/3 cup unsweetened cocoa powder</li>
+                <li>1/4 tsp salt</li>
+                <li>1/4 tsp baking powder</li>
+                <li>1/2 cup chocolate chips (optional for extra richness)</li>
+            </ul>
+            <h4> Instructions: </h4>
+            <ol type=1>
+                <li> Preheat the Oven: Preheat your oven to 350°F (175°C). Grease an 8x8-inch baking pan or line it with
+                    parchment paper.</li>
+                <li>Mix Wet Ingredients: In a large bowl, combine the melted butter and sugar. Whisk until well
+                    combined. Add the eggs one at a time, beating well after each addition, and then add the vanilla
+                    extract.</li>
+                <li>Combine Dry Ingredients: In a separate bowl, mix the flour, cocoa powder, salt, and baking powder.
+                    Mix Wet and Dry: Gradually fold the dry ingredients into the wet ingredients using a spatula until
+                    just combined. Be careful not to overmix.</li>
+                <li>Add Chocolate Chips (Optional): If using chocolate chips, fold them into the batter.</li>
+                <li>Bake: Pour the batter into the prepared pan and spread it evenly. Bake for 20-25 minutes or until a
+                    toothpick inserted into the center comes out with just a few moist crumbs (you don’t want it fully
+                    clean for fudgy brownies).</li>
+                <li>Cool and Serve: Let the brownies cool in the pan for 10-15 minutes, then transfer to a wire rack to
+                    cool completely before slicing. Enjoy!</li>
+            </ol>
+        </div>
+    </div>
+
+</body>
+
+</html>

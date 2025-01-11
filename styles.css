@@ -4,7 +4,7 @@ body {
 }
 
 .header {
-    background-color: #d1843a; /* Chocolate  background */
+    background-color: ##ffc0cb; /* Pink */
     padding: 0px;
     display: flex;
     justify-content: space-between; /* Space between logo and button */
